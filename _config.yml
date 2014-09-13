@@ -10,5 +10,6 @@ github_username:  ebhcgroup
 markdown: kramdown
 permalink: /:categories/:title.html
 
-gems:
-- jekyll-compass
+sass:
+  sass_dir: _sass
+  style: :compressed
