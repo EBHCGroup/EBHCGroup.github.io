@@ -1,0 +1,213 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:$primary-stack;
+	font-weight:normal;
+	font-size: 1em;
+    line-height: 1.25em;
+    font-weight: 300;
+	color:$black;
+	position:relative;
+	background:$white;
+}
+main{
+	max-width:100%;
+	margin:0 auto;
+	min-height:320px;
+	width:100%;
+}
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+
+img {
+    vertical-align: middle;
+	width:100%;
+	height:auto;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - My preference is for percentages when working with fonts. Everyone has their own thing.
+   ========================================================================== */
+p{
+	margin-bottom:1em;
+	line-height:1.35;
+}
+.small{
+	font-size:.875em;
+	font-family:$secondary-stack;
+}
+.text-left {
+  text-align: left;
+}
+.text-uppercase{
+	text-transform:uppercase;
+}
+.text-right {
+  text-align: right;
+}
+.hidden{
+	display:none !important;
+}
+.invisible{
+	visibility:hidden !important;
+}
+.text-center {
+  text-align: center;
+}
+.warning-text{
+	color:$warning-gold;
+}
+.error-text{
+	color:$error-red;
+}
+.success-text{
+	color:$success-green;
+}
+blockquote {
+	padding: 0 0 0 15px;
+	margin: 0 0 20px;
+}
+blockquote p {
+	margin-bottom: 0;
+	font-size: 120%;
+	font-weight: 300;
+	line-height: 160%;
+}
+blockquote small {
+	display: block;
+	line-height: 100%;
+}
+blockquote small:before {
+	content: '\2014 \00A0';
+}
+sup{
+	text-transform:uppercase;
+}
+/* ==========================================================================
+   HEADING STYLES
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:$secondary-stack;
+	font-weight:normal;
+	margin:0;
+}
+h1{
+	font-size:2.250em;
+	line-height:38px;
+}
+h2{
+	font-size:1.875em;
+	line-height:32px;
+}
+h3{
+	font-size:1.250em;
+	line-height:22px;
+}
+h4{
+	font-size:120%;
+}
+h5{
+	font-size:100%;
+}
+h6{
+	font-size:90%;
+}
+/* ==========================================================================
+   LIST STYLES
+   ========================================================================== */
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul.spaced-list, ol.spaced-list {
+	margin-bottom:15px;
+	li{
+		margin:8px 0px;
+	}
+}
+ul.unstyled, ol.unstyled {
+	margin-left: 0;
+	list-style: none;
+}
+ul.inline, ol.inline {
+	margin-left: 0;
+	list-style: none;
+	li{
+		display:inline-block;
+	}
+}
+ol.upper-roman{
+	list-style-type:upper-roman;
+}
+ol.lower-roman{
+	list-style-type:lower-roman;
+}
+
+/* ==========================================================================
+   LINKS - My broad preference is to have no text decoration on links and apply a dotted border on hover.
+   ========================================================================== */
+
+a {
+    color:$highlight;
+	text-decoration:none;
+}
+a:hover{
+}
+
+/* ==========================================================================
+   FORMS -
+   ========================================================================== */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   CLEARFIX
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+@media only screen and (min-width: 31.250em) {
+}
+@media only screen and (min-width: 48.000em) {
+}
+@media only screen and (min-width: 65.000em) {
+	
+}

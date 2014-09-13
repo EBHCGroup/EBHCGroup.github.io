@@ -1,0 +1,61 @@
+header{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:500;
+	height:86px;
+	width:100%;
+	.logo{
+	    background-position: top center;
+	    background-repeat: no-repeat;
+	    background-size:250px 86px;
+		background:url('../img/common/logo.png');
+		width:250px;
+		height:86px;
+	}
+}
+section{
+	width:100%;	
+	overflow:hidden;
+	height:240px;
+ 	position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	&#hero{
+		background-image:url('../img/common/hero.jpg');
+	}
+	&#education{
+		background:url('../img/common/education.jpg');
+	}
+	&#training{
+		background-image:url('../img/common/training.jpg');
+	}
+	&#implementation{
+		background-image:url('../img/common/implementation.jpg');
+	}
+	&#about-us{
+		background-image:url('../img/common/about-us.jpg');
+	}
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+@media only screen and (min-width: 31.250em) {
+	section{
+		height:375px;
+	}
+}
+@media only screen and (min-width: 48.000em) {
+	section{
+		height:576px;
+	}
+}
+@media only screen and (min-width: 65.000em) {
+	section{
+		height:768px;
+	}
+}
