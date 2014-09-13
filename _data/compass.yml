@@ -1,0 +1,10 @@
+---
+require:
+- jekyll-compass
+project_path: /Users/keiths/Documents/My-Documents/personal-sites/cos-working-copy.io/site
+http_path: /
+css_dir: css
+generated_images_dir: img/
+sass_dir: _compass
+images_dir: img
+javascripts_dir: js

@@ -1,0 +1,806 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Normalize CSS
+ * You Know You Love It */
+/* line 3, ../../_compass/_base/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../../_compass/_base/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 11, ../../_compass/_base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 16, ../../_compass/_base/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 20, ../../_compass/_base/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 24, ../../_compass/_base/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 28, ../../_compass/_base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 32, ../../_compass/_base/_normalize.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 36, ../../_compass/_base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 40, ../../_compass/_base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 45, ../../_compass/_base/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+
+/* line 50, ../../_compass/_base/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 56, ../../_compass/_base/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 60, ../../_compass/_base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 64, ../../_compass/_base/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 71, ../../_compass/_base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 75, ../../_compass/_base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 79, ../../_compass/_base/_normalize.scss */
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+/* line 84, ../../_compass/_base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 88, ../../_compass/_base/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 92, ../../_compass/_base/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 98, ../../_compass/_base/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 103, ../../_compass/_base/_normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 109, ../../_compass/_base/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 113, ../../_compass/_base/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 118, ../../_compass/_base/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 122, ../../_compass/_base/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 127, ../../_compass/_base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 134, ../../_compass/_base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 138, ../../_compass/_base/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 143, ../../_compass/_base/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 148, ../../_compass/_base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 154, ../../_compass/_base/_normalize.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 159, ../../_compass/_base/_normalize.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../../_compass/_base/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../_compass/_base/_base.scss */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.25em;
+  font-weight: 300;
+  color: #200105;
+  position: relative;
+  background: #ffffff;
+}
+
+/* line 17, ../../_compass/_base/_base.scss */
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 320px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+/* line 27, ../../_compass/_base/_base.scss */
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY - My preference is for percentages when working with fonts. Everyone has their own thing.
+   ========================================================================== */
+/* line 36, ../../_compass/_base/_base.scss */
+p {
+  margin-bottom: 1em;
+  line-height: 1.35;
+}
+
+/* line 40, ../../_compass/_base/_base.scss */
+.small {
+  font-size: .875em;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 44, ../../_compass/_base/_base.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 47, ../../_compass/_base/_base.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 50, ../../_compass/_base/_base.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 53, ../../_compass/_base/_base.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 56, ../../_compass/_base/_base.scss */
+.invisible {
+  visibility: hidden !important;
+}
+
+/* line 59, ../../_compass/_base/_base.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 62, ../../_compass/_base/_base.scss */
+.warning-text {
+  color: #D8C26C;
+}
+
+/* line 65, ../../_compass/_base/_base.scss */
+.error-text {
+  color: #ed1c2e;
+}
+
+/* line 68, ../../_compass/_base/_base.scss */
+.success-text {
+  color: #0da68e;
+}
+
+/* line 71, ../../_compass/_base/_base.scss */
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+}
+
+/* line 75, ../../_compass/_base/_base.scss */
+blockquote p {
+  margin-bottom: 0;
+  font-size: 120%;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+/* line 81, ../../_compass/_base/_base.scss */
+blockquote small {
+  display: block;
+  line-height: 100%;
+}
+
+/* line 85, ../../_compass/_base/_base.scss */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+
+/* line 88, ../../_compass/_base/_base.scss */
+sup {
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   HEADING STYLES
+   ========================================================================== */
+/* line 94, ../../_compass/_base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 104, ../../_compass/_base/_base.scss */
+h1 {
+  font-size: 2.250em;
+  line-height: 38px;
+}
+
+/* line 108, ../../_compass/_base/_base.scss */
+h2 {
+  font-size: 1.875em;
+  line-height: 32px;
+}
+
+/* line 112, ../../_compass/_base/_base.scss */
+h3 {
+  font-size: 1.250em;
+  line-height: 22px;
+}
+
+/* line 116, ../../_compass/_base/_base.scss */
+h4 {
+  font-size: 120%;
+}
+
+/* line 119, ../../_compass/_base/_base.scss */
+h5 {
+  font-size: 100%;
+}
+
+/* line 122, ../../_compass/_base/_base.scss */
+h6 {
+  font-size: 90%;
+}
+
+/* ==========================================================================
+   LIST STYLES
+   ========================================================================== */
+/* line 128, ../../_compass/_base/_base.scss */
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+/* line 133, ../../_compass/_base/_base.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+/* line 139, ../../_compass/_base/_base.scss */
+ul.spaced-list, ol.spaced-list {
+  margin-bottom: 15px;
+}
+/* line 141, ../../_compass/_base/_base.scss */
+ul.spaced-list li, ol.spaced-list li {
+  margin: 8px 0px;
+}
+
+/* line 145, ../../_compass/_base/_base.scss */
+ul.unstyled, ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 149, ../../_compass/_base/_base.scss */
+ul.inline, ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+/* line 152, ../../_compass/_base/_base.scss */
+ul.inline li, ol.inline li {
+  display: inline-block;
+}
+
+/* line 156, ../../_compass/_base/_base.scss */
+ol.upper-roman {
+  list-style-type: upper-roman;
+}
+
+/* line 159, ../../_compass/_base/_base.scss */
+ol.lower-roman {
+  list-style-type: lower-roman;
+}
+
+/* ==========================================================================
+   LINKS - My broad preference is to have no text decoration on links and apply a dotted border on hover.
+   ========================================================================== */
+/* line 167, ../../_compass/_base/_base.scss */
+a {
+  color: #4e0102;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   FORMS -
+   ========================================================================== */
+/* line 178, ../../_compass/_base/_base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 183, ../../_compass/_base/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   CLEARFIX
+   ========================================================================== */
+/* line 191, ../../_compass/_base/_base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 197, ../../_compass/_base/_base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 200, ../../_compass/_base/_base.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+/* ==========================================================================
+   DEFAULT COLUMN STYLES
+   ========================================================================== */
+/* line 4, ../../_compass/_base/_grid.scss */
+.content {
+  margin: 0 auto;
+  width: 19em;
+  position: relative;
+}
+
+/* line 9, ../../_compass/_base/_grid.scss */
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 13, ../../_compass/_base/_grid.scss */
+.col.empty {
+  display: none;
+}
+
+@media only screen and (min-width: 31.25em) {
+  /* line 19, ../../_compass/_base/_grid.scss */
+  .content {
+    width: 31.250em;
+  }
+}
+@media only screen and (min-width: 48em) {
+  /* line 25, ../../_compass/_base/_grid.scss */
+  .col.empty {
+    display: block;
+  }
+
+  /* line 29, ../../_compass/_base/_grid.scss */
+  .content {
+    width: 48.000em;
+  }
+
+  /* line 33, ../../_compass/_base/_grid.scss */
+  .gutters .col {
+    margin-left: 2%;
+  }
+  /* line 36, ../../_compass/_base/_grid.scss */
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+
+  /* line 41, ../../_compass/_base/_grid.scss */
+  .span-1 {
+    width: 8.33333333333%;
+  }
+
+  /* line 42, ../../_compass/_base/_grid.scss */
+  .span-2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 43, ../../_compass/_base/_grid.scss */
+  .span-3 {
+    width: 25%;
+  }
+
+  /* line 44, ../../_compass/_base/_grid.scss */
+  .span-4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 45, ../../_compass/_base/_grid.scss */
+  .span-5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 46, ../../_compass/_base/_grid.scss */
+  .span-6 {
+    width: 50%;
+  }
+
+  /* line 47, ../../_compass/_base/_grid.scss */
+  .span-7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 48, ../../_compass/_base/_grid.scss */
+  .span-8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 49, ../../_compass/_base/_grid.scss */
+  .span-9 {
+    width: 75%;
+  }
+
+  /* line 50, ../../_compass/_base/_grid.scss */
+  .span-10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 51, ../../_compass/_base/_grid.scss */
+  .span-11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 52, ../../_compass/_base/_grid.scss */
+  .span-12 {
+    width: 100%;
+  }
+
+  /* line 55, ../../_compass/_base/_grid.scss */
+  .gutters .span-1 {
+    width: 6.5%;
+  }
+  /* line 56, ../../_compass/_base/_grid.scss */
+  .gutters .span-2 {
+    width: 15.0%;
+  }
+  /* line 57, ../../_compass/_base/_grid.scss */
+  .gutters .span-3 {
+    width: 23.5%;
+  }
+  /* line 58, ../../_compass/_base/_grid.scss */
+  .gutters .span-4 {
+    width: 32.0%;
+  }
+  /* line 59, ../../_compass/_base/_grid.scss */
+  .gutters .span-5 {
+    width: 40.5%;
+  }
+  /* line 60, ../../_compass/_base/_grid.scss */
+  .gutters .span-6 {
+    width: 49.0%;
+  }
+  /* line 61, ../../_compass/_base/_grid.scss */
+  .gutters .span-7 {
+    width: 57.5%;
+  }
+  /* line 62, ../../_compass/_base/_grid.scss */
+  .gutters .span-8 {
+    width: 66.0%;
+  }
+  /* line 63, ../../_compass/_base/_grid.scss */
+  .gutters .span-9 {
+    width: 74.5%;
+  }
+  /* line 64, ../../_compass/_base/_grid.scss */
+  .gutters .span-10 {
+    width: 83.0%;
+  }
+  /* line 65, ../../_compass/_base/_grid.scss */
+  .gutters .span-11 {
+    width: 91.5%;
+  }
+  /* line 66, ../../_compass/_base/_grid.scss */
+  .gutters .span-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 65em) {
+  /* line 71, ../../_compass/_base/_grid.scss */
+  .content {
+    max-width: 65.000em;
+  }
+}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   inset-box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   text-texture            - arguments: textureURL: '/images/your-texture-file.jpg'
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+    -   clearfix                - no args
+    -   no-appearance              - no args
+
+
+* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+@import "sprites/*.png";
+@include all-sprites-sprites(all);
+
+* Retina Sprites for Compass
+* by:              Gaya Kessler
+* last update:     03/11/14
+*
+* Usage:
+* 1. create two folders in your image directory (in this case 'icons' and 'icons-2x').
+* 2. adjust the folder names defined below if you use different names.
+* 3. create sprite images for pixel ratio 1 screens and put them in the first folder.
+* 4. create sprite images for pixel ratio 2 screens and put them in the second folder, use the same filenames.
+* 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
+
+*/
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* INSET BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TEXT TEXTURE */
+/* TRANSFORM  */
+/* TRANSLATE X Y */
+/* TRANSLATE 3D */
+/* TRANSLATE 3D Z */
+/* TRANSITION */
+/* ANIMATION DELAY */
+/* ANIMATION DURATON */
+/* ANIMATION DIRECTION */
+/* ANIMATION FILL MODE */
+/* ANIMATION ITERATON COUNT */
+/* ANIMATION TIMING */
+/* ANIMATION NAME */
+/* KEYFRAMES */
+/* TRIPLE BORDERS */
+/* CLEARFIX */
+/* ==========================================================================
+   NO APPEARANCE
+   ========================================================================== */
+/* line 1, ../../_compass/_themes/_homepage.scss */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  height: 86px;
+  width: 100%;
+}
+/* line 8, ../../_compass/_themes/_homepage.scss */
+header .logo {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 250px 86px;
+  background: url("../img/common/logo.png");
+  width: 250px;
+  height: 86px;
+}
+
+/* line 17, ../../_compass/_themes/_homepage.scss */
+section {
+  width: 100%;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 26, ../../_compass/_themes/_homepage.scss */
+section#hero {
+  background-image: url("../img/common/hero.jpg");
+}
+/* line 29, ../../_compass/_themes/_homepage.scss */
+section#education {
+  background: url("../img/common/education.jpg");
+}
+/* line 32, ../../_compass/_themes/_homepage.scss */
+section#training {
+  background-image: url("../img/common/training.jpg");
+}
+/* line 35, ../../_compass/_themes/_homepage.scss */
+section#implementation {
+  background-image: url("../img/common/implementation.jpg");
+}
+/* line 38, ../../_compass/_themes/_homepage.scss */
+section#about-us {
+  background-image: url("../img/common/about-us.jpg");
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media only screen and (min-width: 31.25em) {
+  /* line 48, ../../_compass/_themes/_homepage.scss */
+  section {
+    height: 375px;
+  }
+}
+@media only screen and (min-width: 48em) {
+  /* line 53, ../../_compass/_themes/_homepage.scss */
+  section {
+    height: 576px;
+  }
+}
+@media only screen and (min-width: 65em) {
+  /* line 58, ../../_compass/_themes/_homepage.scss */
+  section {
+    height: 768px;
+  }
+}
