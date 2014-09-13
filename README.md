@@ -1,6 +1,6 @@
 What It Is
 --------------
-This is the Jekyll site for my never ending art project, Conspiracy of Shadows. It is deployed via [GitHub User Pages](https://help.github.com/articles/what-are-github-pages).
+This is the Jekyll site for the Evidence-based Healthcare Group. It is deployed via [GitHub User Pages](https://help.github.com/articles/what-are-github-pages).
 
 Prerequisites
 -------------
@@ -18,4 +18,4 @@ After that, you should be able to run the following command:
 
 License
 -------
-The content (text and images) are Copyright Keith Senkowski. You may not reuse any of it without my permission. The code is MIT Licensed.
+The text of this site are Copyright EBHC Group. You may not reuse any of it without permission. The code is MIT Licensed.
