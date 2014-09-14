@@ -49,10 +49,10 @@ section{
 	&#education{
 		background-image:url('../img/common/education.jpg');
 		aside{
-			position:absolute;
-			top:10px;
-			left:10px;
 			h2{
+				font-size:2em;
+				line-height:1.3em;
+				margin-top:1em;
 				text-transform:uppercase;
 				text-shadow:1px 1px 3px #ffffff;
 				font-weight:700;
@@ -69,9 +69,6 @@ section{
 	&#training{
 		background-image:url('../img/common/training.jpg');
 		aside{
-			position:absolute;
-			top:10px;
-			left:10px;
 			h2{
 				text-transform:uppercase;
 				text-shadow:1px 1px 3px #ffffff;
@@ -89,9 +86,6 @@ section{
 	&#implementation{
 		background-image:url('../img/common/implementation.jpg');
 		aside{
-			position:absolute;
-			top:10px;
-			left:10px;
 			h2{
 				text-transform:uppercase;
 				text-shadow:1px 1px 3px #ffffff;
@@ -109,9 +103,6 @@ section{
 	&#about-us{
 		background-image:url('../img/common/about-us.jpg');
 		aside{
-			position:absolute;
-			top:10px;
-			left:10px;
 			h2{
 				text-transform:uppercase;
 				text-shadow:1px 1px 3px #ffffff;
@@ -127,7 +118,11 @@ section{
 		}
 	}
 }
-
+footer{
+	background:$white;
+	min-height:768px;
+	width:100%;
+}
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
