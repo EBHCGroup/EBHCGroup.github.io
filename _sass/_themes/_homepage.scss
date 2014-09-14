@@ -1,42 +1,130 @@
 header{
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:500;
-	height:86px;
+	min-height:86px;
 	width:100%;
-	.logo{
-	    background-position: top center;
-	    background-repeat: no-repeat;
-	    background-size:250px 86px;
-		background:url('../img/common/logo.png');
-		width:250px;
-		height:86px;
+	background:#5a7dff;
+	ul{
+		display:none;
 	}
 }
 section{
 	width:100%;	
 	overflow:hidden;
-	height:240px;
+	min-height:240px;
  	position: relative;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-	&#hero{
-		background-image:url('../img/common/hero.jpg');
+	.education{
+		margin:0 0 1.4em;
+		ul{
+			margin:1.4em 0 0 2em;
+		}
+	}
+ 	&#hero{
+		background-image:url('../img/common/hero.jpg');		
+		aside{
+			h1{
+				color:$white;
+				text-transform:uppercase;
+				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+				font-weight:700;
+				font-size:2em;
+				line-height:1.3em;
+				margin-top:1em;
+			}
+			p{
+				color:$white;
+				font-weight:300;
+				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+				margin:.5em 0 0;
+				font-size:1.2em;
+			}
+		}
+		.summary{
+			color:$white;
+			text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+			font-family:$secondary-stack;
+		}	
 	}
 	&#education{
-		background:url('../img/common/education.jpg');
+		background-image:url('../img/common/education.jpg');
+		aside{
+			position:absolute;
+			top:10px;
+			left:10px;
+			h2{
+				text-transform:uppercase;
+				text-shadow:1px 1px 3px #ffffff;
+				font-weight:700;
+			}
+			p{
+				color:$black;
+				font-weight:300;
+				text-shadow:1px 1px 3px #ffffff;
+				margin:.5em 0 0;
+				font-size:1.8em;
+			}
+		}
 	}
 	&#training{
 		background-image:url('../img/common/training.jpg');
+		aside{
+			position:absolute;
+			top:10px;
+			left:10px;
+			h2{
+				text-transform:uppercase;
+				text-shadow:1px 1px 3px #ffffff;
+				font-weight:700;
+			}
+			p{
+				color:$black;
+				font-weight:300;
+				text-shadow:1px 1px 3px #ffffff;
+				margin:.5em 0 0;
+				font-size:1.8em;
+			}
+		}
 	}
 	&#implementation{
 		background-image:url('../img/common/implementation.jpg');
+		aside{
+			position:absolute;
+			top:10px;
+			left:10px;
+			h2{
+				text-transform:uppercase;
+				text-shadow:1px 1px 3px #ffffff;
+				font-weight:700;
+			}
+			p{
+				color:$black;
+				font-weight:300;
+				text-shadow:1px 1px 3px #ffffff;
+				margin:.5em 0 0;
+				font-size:1.8em;
+			}
+		}
 	}
 	&#about-us{
 		background-image:url('../img/common/about-us.jpg');
+		aside{
+			position:absolute;
+			top:10px;
+			left:10px;
+			h2{
+				text-transform:uppercase;
+				text-shadow:1px 1px 3px #ffffff;
+				font-weight:700;
+			}
+			p{
+				color:$black;
+				font-weight:300;
+				text-shadow:1px 1px 3px #ffffff;
+				margin:.5em 0 0;
+				font-size:1.8em;
+			}
+		}
 	}
 }
 
@@ -45,17 +133,39 @@ section{
    ========================================================================== */
 
 @media only screen and (min-width: 31.250em) {
+	header{
+		.logo{
+			background-size:100% 100%;
+			width:327px;
+			height:113px;
+		}
+		ul{
+			display:block;
+		}
+	}
 	section{
-		height:375px;
+		background-attachment:fixed;
+		min-height:375px;
+		&#hero{
+			aside{
+				top:160px;
+				h1{
+					font-size:2.8em;
+				}
+				p{
+					font-size:1.5em;
+				}
+			}
+		}
 	}
 }
 @media only screen and (min-width: 48.000em) {
 	section{
-		height:576px;
+		min-height:576px;
 	}
 }
 @media only screen and (min-width: 65.000em) {
 	section{
-		height:768px;
+		min-height:768px;
 	}
 }
