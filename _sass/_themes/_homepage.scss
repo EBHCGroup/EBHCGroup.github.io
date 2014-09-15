@@ -1,9 +1,21 @@
 header{
-	min-height:86px;
+	height:35px;
 	width:100%;
-	background:#5a7dff;
-	ul{
-		display:none;
+	position:absolute;
+	top:0;
+	z-index:500;
+	background:$off-white;
+	nav{
+		text-transform:uppercase;
+		text-align:right;
+		float:right;
+		font-weight:700;
+		ul{
+			display:none;
+			li{
+				margin:.5em;
+			}
+		}
 	}
 }
 section{
@@ -14,7 +26,17 @@ section{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-	.education{
+	.container{
+		background-image:url('../img/common/background.png');
+		padding:3%;
+		border-radius:8px;
+		font-family:$secondary-stack;
+		margin:1em 0 1em;
+		ul{
+			margin-bottom:0px;
+		}
+	}
+	.education:first-of-type{
 		margin:0 0 1.4em;
 		ul{
 			margin:1.4em 0 0 2em;
@@ -22,6 +44,9 @@ section{
 	}
  	&#hero{
 		background-image:url('../img/common/hero.jpg');		
+		.content{
+			margin-top:6em;
+		}
 		aside{
 			h1{
 				color:$white;
@@ -50,19 +75,20 @@ section{
 		background-image:url('../img/common/education.jpg');
 		aside{
 			h2{
-				font-size:2em;
+				font-size:2.8em;
 				line-height:1.3em;
-				margin-top:1em;
+				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow:1px 1px 3px #ffffff;
+				text-shadow: 1px 1px 20px #ffffff;
 				font-weight:700;
 			}
 			p{
 				color:$black;
-				font-weight:300;
-				text-shadow:1px 1px 3px #ffffff;
-				margin:.5em 0 0;
-				font-size:1.8em;
+				text-transform:uppercase;
+				font-weight:400;
+				text-shadow: 1px 1px 20px #ffffff;
+				margin:.1em 0 .2em;
+				font-size:1.4em;
 			}
 		}
 	}
@@ -70,16 +96,21 @@ section{
 		background-image:url('../img/common/training.jpg');
 		aside{
 			h2{
+				font-size:2.8em;
+				line-height:1.3em;
+				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow:1px 1px 3px #ffffff;
+				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
 				font-weight:700;
+				color:$white;
 			}
 			p{
-				color:$black;
-				font-weight:300;
-				text-shadow:1px 1px 3px #ffffff;
-				margin:.5em 0 0;
-				font-size:1.8em;
+				color:$white;
+				text-transform:uppercase;
+				font-weight:400;
+				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+				margin:.1em 0 .2em;
+				font-size:1.4em;
 			}
 		}
 	}
@@ -87,16 +118,20 @@ section{
 		background-image:url('../img/common/implementation.jpg');
 		aside{
 			h2{
+				font-size:2.8em;
+				line-height:1.3em;
+				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow:1px 1px 3px #ffffff;
+				text-shadow: 1px 1px 20px #ffffff;
 				font-weight:700;
 			}
 			p{
 				color:$black;
-				font-weight:300;
-				text-shadow:1px 1px 3px #ffffff;
-				margin:.5em 0 0;
-				font-size:1.8em;
+				text-transform:uppercase;
+				font-weight:400;
+				text-shadow: 1px 1px 20px #ffffff;
+				margin:.1em 0 .2em;
+				font-size:1.4em;
 			}
 		}
 	}
@@ -104,24 +139,39 @@ section{
 		background-image:url('../img/common/about-us.jpg');
 		aside{
 			h2{
+				font-size:2.8em;
+				line-height:1.3em;
+				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow:1px 1px 3px #ffffff;
+				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
 				font-weight:700;
+				color:$white;
 			}
 			p{
-				color:$black;
-				font-weight:300;
-				text-shadow:1px 1px 3px #ffffff;
-				margin:.5em 0 0;
-				font-size:1.8em;
+				color:$white;
+				text-transform:uppercase;
+				font-weight:400;
+				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+				margin:.1em 0 .2em;
+				font-size:1.4em;
 			}
 		}
 	}
 }
 footer{
 	background:$white;
-	min-height:768px;
+	min-height:300px;
 	width:100%;
+	aside{
+		h2{
+			font-size:2.8em;
+			line-height:1.3em;
+			margin-top:.5em;
+			text-transform:uppercase;
+			text-shadow: 1px 1px 20px #ffffff;
+			font-weight:700;
+		}
+	}	
 }
 /* ==========================================================================
    MEDIA QUERIES
@@ -134,8 +184,11 @@ footer{
 			width:327px;
 			height:113px;
 		}
-		ul{
-			display:block;
+		nav{
+			ul{
+				display:block;
+			}
+			
 		}
 	}
 	section{
