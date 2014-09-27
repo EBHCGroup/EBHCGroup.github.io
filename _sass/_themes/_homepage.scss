@@ -4,20 +4,17 @@ header{
 	position:absolute;
 	top:0;
 	z-index:500;
-	background:$off-white;
-	nav{
-		text-transform:uppercase;
-		text-align:right;
-		float:right;
-		font-weight:700;
-		ul{
-			display:none;
-			li{
-				margin:.5em;
-			}
-		}
+	background:transparent;
+	img{
+		display:block;
+		margin:20px auto 0px;
+		max-width:400px;
 	}
 }
+.summary{
+	font-family:$secondary-stack;
+}
+
 section{
 	width:100%;	
 	overflow:hidden;
@@ -26,10 +23,31 @@ section{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+	.box{
+		background-color: $educated;
+		min-height:330px;
+		padding:1%;
+		cursor:pointer;
+		h3{
+			text-transform:uppercase;
+			font-size:2em;
+			margin-top:2em;
+		}
+		&.two, &.online{
+			background-color: $trained;
+		}
+		&.three, &.hybrid{
+			background-color: $implement;
+		}
+		
+		.icon{
+			font-size:4.5em;
+			
+		}
+	}
+
 	.container{
-		background-image:url('../img/common/background.png');
 		padding:3%;
-		border-radius:8px;
 		font-family:$secondary-stack;
 		margin:1em 0 1em;
 		ul{
@@ -42,116 +60,148 @@ section{
 			margin:1.4em 0 0 2em;
 		}
 	}
+	&#big-three{
+		min-height:330px;
+	}
  	&#hero{
 		background-image:url('../img/common/hero.jpg');		
 		.content{
 			margin-top:6em;
 		}
 		aside{
+			padding-top:6%;
 			h1{
-				color:$white;
+				color:$black;
 				text-transform:uppercase;
-				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
 				font-weight:700;
 				font-size:2em;
 				line-height:1.3em;
 				margin-top:1em;
 			}
 			p{
-				color:$white;
+				color:$black;
 				font-weight:300;
-				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
 				margin:.5em 0 0;
 				font-size:1.2em;
 			}
 		}
-		.summary{
-			color:$white;
-			text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
-			font-family:$secondary-stack;
-		}	
 	}
 	&#education{
-		background-image:url('../img/common/education.jpg');
+		background-color:$off-white;
+		.content{
+			padding:3% 0;
+		}
 		aside{
 			h2{
 				font-size:2.8em;
 				line-height:1.3em;
 				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow: 1px 1px 20px #ffffff;
+				text-shadow: 1px 1px 20px $educated;
 				font-weight:700;
 			}
 			p{
 				color:$black;
 				text-transform:uppercase;
 				font-weight:400;
-				text-shadow: 1px 1px 20px #ffffff;
+				text-shadow: 1px 1px 20px $educated;
 				margin:.1em 0 .2em;
 				font-size:1.4em;
 			}
 		}
+		.box{
+			min-height:580px;
+			padding:3%;
+			.icon{
+				line-height:.25em;
+			}
+		}
 	}
 	&#training{
-		background-image:url('../img/common/training.jpg');
+		background-color:$off-white;
+		.content{
+			padding:3% 0;
+		}
+		.box{
+			height:485px;
+			padding:3%;
+			&.image{
+				background-image:url('../img/common/training.jpg');
+				background-size:cover;
+			}
+		}
 		aside{
 			h2{
 				font-size:2.8em;
 				line-height:1.3em;
 				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+				text-shadow: 1px 1px 20px $trained;
 				font-weight:700;
-				color:$white;
+				color:$black;
 			}
 			p{
-				color:$white;
+				color:$black;
 				text-transform:uppercase;
 				font-weight:400;
-				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
+				text-shadow: 1px 1px 20px $trained;
 				margin:.1em 0 .2em;
 				font-size:1.4em;
 			}
 		}
 	}
 	&#implementation{
-		background-image:url('../img/common/implementation.jpg');
+		background-color:$off-white;
 		aside{
 			h2{
+				color:$black;
 				font-size:2.8em;
 				line-height:1.3em;
 				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow: 1px 1px 20px #ffffff;
+				text-shadow: 1px 1px 20px $implement;
 				font-weight:700;
 			}
 			p{
 				color:$black;
 				text-transform:uppercase;
 				font-weight:400;
-				text-shadow: 1px 1px 20px #ffffff;
+				text-shadow: 1px 1px 20px $implement;
 				margin:.1em 0 .2em;
 				font-size:1.4em;
 			}
 		}
 	}
 	&#about-us{
-		background-image:url('../img/common/about-us.jpg');
+		background-color:$white;
+		.box{
+			padding:0 2%;
+		}
+		img{
+			display:block;
+			margin:20px auto 0px;
+			width:150px;
+			border-radius:100%;
+		}
+		h3{
+			font-size:1.5em;
+		}
+		.content{
+			padding:3% 0;
+		}
 		aside{
 			h2{
 				font-size:2.8em;
 				line-height:1.3em;
 				margin-top:.5em;
 				text-transform:uppercase;
-				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
 				font-weight:700;
-				color:$white;
+				color:$black;
 			}
 			p{
-				color:$white;
+				color:$black;
 				text-transform:uppercase;
 				font-weight:400;
-				text-shadow: 1px 1px 20px #000000, 3px 3px 20px #5a7dff;
 				margin:.1em 0 .2em;
 				font-size:1.4em;
 			}
@@ -159,16 +209,16 @@ section{
 	}
 }
 footer{
-	background:$white;
-	min-height:300px;
+	background:$highlight;
 	width:100%;
+	padding:3% 0 5%;
 	aside{
 		h2{
 			font-size:2.8em;
 			line-height:1.3em;
-			margin-top:.5em;
+			margin:0;
 			text-transform:uppercase;
-			text-shadow: 1px 1px 20px #ffffff;
+			color:$white;
 			font-weight:700;
 		}
 	}	
@@ -183,12 +233,6 @@ footer{
 			background-size:100% 100%;
 			width:327px;
 			height:113px;
-		}
-		nav{
-			ul{
-				display:block;
-			}
-			
 		}
 	}
 	section{
@@ -209,11 +253,22 @@ footer{
 }
 @media only screen and (min-width: 48.000em) {
 	section{
-		min-height:576px;
+		&#hero{
+			min-height:576px;
+		}
+		
 	}
 }
 @media only screen and (min-width: 65.000em) {
 	section{
-		min-height:768px;
+		&#hero{
+			min-height:768px;
+		}
+		&#about-us{
+			.box{
+				min-height:1100px;
+			}
+	}	
 	}
+	
 }

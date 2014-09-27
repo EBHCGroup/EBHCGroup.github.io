@@ -21,13 +21,19 @@
 	}
 }
 @media only screen and (min-width: 48.000em) {
+	.content{
+		width:47.000em;
+	}
+
+}
+@media only screen and (min-width: 65.000em) {
+	.content{
+		max-width:64.000em;
+	}
 	.col{
 		&.empty{
 			display:block;
 		}
-	}
-	.content{
-		width:47.000em;
 	}
 	.gutters {
 		.col {
@@ -64,12 +70,6 @@
 		.span-10 { width: 83.0%; }
 		.span-11 { width: 91.5%; }
 		.span-12 { width: 100%; }
-	}
-
-}
-@media only screen and (min-width: 65.000em) {
-	.content{
-		max-width:64.000em;
 	}
 
 }

@@ -1,2 +1,34 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("fonts/flaticon.eot");
+	src: url("fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("fonts/flaticon.woff") format("woff"),
+	url("fonts/flaticon.ttf") format("truetype"),
+	url("fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 $primary-stack			:'Oswald', sans-serif;
 $secondary-stack		:Arial, sans-serif; 
+$icon-stack				:Flaticon;
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+font-style: normal;
+}.flaticon-online1:before {
+	content: "\e000";
+}
+.flaticon-open135:before {
+	content: "\e001";
+}
+.flaticon-teacher12:before {
+	content: "\e002";
+}
+.flaticon-teacher9:before {
+	content: "\e003";
+}
+.flaticon-two174:before {
+	content: "\e004";
+}
