@@ -27,7 +27,6 @@ section{
 		background-color: $educated;
 		min-height:330px;
 		padding:1%;
-		cursor:pointer;
 		h3{
 			text-transform:uppercase;
 			font-size:2em;
@@ -62,11 +61,19 @@ section{
 	}
 	&#big-three{
 		min-height:330px;
+		.box{
+			cursor:pointer;
+		}
 	}
  	&#hero{
-		background-image:url('../img/common/hero.jpg');		
+		background-image:$off-white;
+		min-height:330px;
 		.content{
 			margin-top:6em;
+		}
+		.icon{
+			display:none;
+			cursor:pointer;
 		}
 		aside{
 			padding-top:6%;
@@ -126,7 +133,7 @@ section{
 			height:485px;
 			padding:3%;
 			&.image{
-				background-image:url('../img/common/training.jpg');
+				background-image:url('../img/common2x/training.jpg');
 				background-size:cover;
 			}
 		}
@@ -186,6 +193,11 @@ section{
 		h3{
 			font-size:1.5em;
 		}
+		a{
+			color:$highlight;
+			text-decoration:underline;
+			font-weight:800;
+		}
 		.content{
 			padding:3% 0;
 		}
@@ -212,16 +224,11 @@ footer{
 	background:$highlight;
 	width:100%;
 	padding:3% 0 5%;
-	aside{
-		h2{
-			font-size:2.8em;
-			line-height:1.3em;
-			margin:0;
-			text-transform:uppercase;
-			color:$white;
-			font-weight:700;
-		}
-	}	
+	.copyright{
+		font-family:$secondary-stack;
+		font-size:.75em;
+		color:$white;
+	}
 }
 /* ==========================================================================
    MEDIA QUERIES
@@ -239,6 +246,7 @@ footer{
 		background-attachment:fixed;
 		min-height:375px;
 		&#hero{
+			background-image:url('../img/common2x/hero.jpg');		
 			aside{
 				top:160px;
 				h1{
@@ -255,6 +263,15 @@ footer{
 	section{
 		&#hero{
 			min-height:576px;
+			.icon{
+				font-size:4.5em;
+				color:$white;
+				display:block;
+				position:absolute;
+				bottom:0px;
+				right:10px;
+				line-height:0;
+			}
 		}
 		
 	}

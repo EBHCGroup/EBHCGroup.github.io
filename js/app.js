@@ -13,6 +13,22 @@
 	};
 	ebhc.util = {
 		init: function(){
+			$('#big-three').on('click','.box', function(){
+				deck = $(this).attr('data-destination');
+				$('html,body').animate({scrollTop: $('#'+deck).offset().top});
+			});
+			$('#hero').on('click','.icon', function(){
+				$('html,body').animate({scrollTop: $('#big-three').offset().top});
+			});
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scroll').fadeOut();
+				} else {
+					$('.scroll').fadeIn();
+				}
+			});
+			
 		},
 		isEmpty: function(item){
 			return !$.trim(item.html());
