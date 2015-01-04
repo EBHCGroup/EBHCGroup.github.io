@@ -202,6 +202,9 @@ section{
 		}
 		h3{
 			font-size:1.5em;
+			small{
+				text-transform:none;
+			}
 		}
 		a{
 			color:$highlight;
